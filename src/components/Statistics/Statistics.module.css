@@ -1,5 +1,5 @@
 .statistics{
- width: 80vw;
+ width: 600px;
  background-color: rgba(0, 0, 0, 0.1);
  outline: grey;
  margin-left: auto;
@@ -25,19 +25,31 @@ border: 1px solid grey;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: rgba(128, 128, 128, 0.8);
+    background-color: rgba(119, 78, 78, 0.8);
 }
 
-.item {
+.itemOdd {
     list-style-type: none;
     display: flex;  
     gap: 10px;
     flex-direction: column;
     padding: 10px;
-    border: 1px solid grey;
+    border: none;
     width: 20%;
     color: #fff;
 }
+.itemEven {
+    list-style-type: none;
+    display: flex;  
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px;
+    border: none;
+    background-color: rgb(52, 83, 83);
+    width: 20%;
+    color: #fff;
+}
+
 
 .label {
     font-weight: 500;

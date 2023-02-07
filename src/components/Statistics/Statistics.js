@@ -8,8 +8,8 @@ return (
 <section className={css.statistics}>
 {title &&  <h2 className={css.title}>{title}</h2>}
 <ul className={css.statlist}>
-{stats.map(({ id, label, percentage }) => {
-   return ( <li className={css.item} key={id}>
+{stats.map(({ id, label, percentage }, idx) => {
+   return ( <li className={(idx %2 === 0) ? css.itemEven : css.itemOdd} key={id}>
             <span className={css.label}>{label}</span>
             <span className={css.percentage}>{percentage}%</span>
         </li>);
