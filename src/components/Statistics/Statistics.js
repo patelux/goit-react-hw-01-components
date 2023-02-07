@@ -1,17 +1,17 @@
+import React from 'react';
 import PropTypes from 'prop-types';
+import css from './Statistics.module.css'
 
 export function Statistics ({title, stats}) {
-    // console.log('stats', stats);
 return (
 
-<section class="statistics">
-{title &&  <h2 class="title">{title}</h2>}
-{/* {title? <h2 class="title">{title}</h2> : null} */}
-<ul class="stat-list">
+<section className={css.statistics}>
+{title &&  <h2 className={css.title}>{title}</h2>}
+<ul className={css.statlist}>
 {stats.map(({ id, label, percentage }) => {
-   return ( <li class="item" key={id}>
-            <span class="label">{label}</span>
-            <span class="percentage">{percentage}%</span>
+   return ( <li className={css.item} key={id}>
+            <span className={css.label}>{label}</span>
+            <span className={css.percentage}>{percentage}%</span>
         </li>);
 })}    
   </ul>
@@ -20,7 +20,10 @@ return (
 
 Statistics.propTypes = {
     title: PropTypes.string,
-    id: PropTypes.number.isRequired,
+    stats: PropTypes.arrayOf(PropTypes.exact({
+    id: PropTypes.string.isRequired,
     label: PropTypes.number.isRequired,
-    percentage: PropTypes.number.isRequired,
+    percentage: PropTypes.number.isRequired,    
+    }))
+
 };

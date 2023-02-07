@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
 
 body {
   margin: 0;
@@ -12,36 +12,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-/* section {
-  width: 100%;
-  background-color: #717171;
-} */
-.profile {
-  background-color: rgba(0, 255, 255, 0.2);
-  width: 80vw;
-  margin: 10px auto;
-  /* display: flex; */
-  text-align: center;
-}
-img {
-  border: 1px solid grey ;
-  border-radius: 15px;;
-}
-.stats {
-  /* margin: 10px 0; */
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  gap: 10px;
-}
-li {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;  
-  gap: 10px;
-  flex-direction: column;
-  outline: 1px solid tomato;
 }

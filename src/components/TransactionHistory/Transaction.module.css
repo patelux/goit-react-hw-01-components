@@ -1,0 +1,40 @@
+.transactionHistory {
+margin: 0 auto;
+font-family: 'Times New Roman', Times, serif;
+width: 600px;
+}
+.tableLine {
+height: 70px;
+}
+
+.tableColumnType {
+    width: 200px;
+    border: 2px solid grey;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: ;
+    }
+.tableColumn {
+width: 200px;
+border: 2px solid grey;
+}
+
+.tableHead {
+height: 60px;
+table-layout: auto;
+margin: 30px auto;
+padding: 20px;
+border: 2px solid grey;
+border-radius: 10px;
+background-color: rgba(128, 128, 128, 0.8);
+color: #fff;
+text-align: center;
+font-size: 24px;
+font-family: inherit;
+}
+
+.tableBody{
+text-align: center;
+font-size: 18px;
+width: 34%;
+}
