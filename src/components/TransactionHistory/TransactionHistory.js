@@ -13,8 +13,8 @@ export function TransactionHistory({ items }) {
         </thead>
   
         <tbody className={css.tableBody}>
-          {items.map(item => (
-            <tr className={css.tableLine} key={item.id}>
+          {items.map((item, idx) => (
+            <tr className={(idx % 2 === 0) ? css.tableLineEven : css.tableLineOdd} key={item.id}>
               <td className={css.tableColumnType}>{item.type}</td>
               <td className={css.tableColumn}>{item.amount}</td>
               <td className={css.tableColumn}>{item.currency}</td>

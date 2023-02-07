@@ -3,8 +3,13 @@ margin: 0 auto;
 font-family: 'Times New Roman', Times, serif;
 width: 600px;
 }
-.tableLine {
+.tableLineEven {
 height: 70px;
+background-color:rgba(128, 128, 128, 0.25);
+}
+
+.tableLineOdd {
+    height: 70px;
 }
 
 .tableColumnType {
@@ -12,7 +17,7 @@ height: 70px;
     border: 2px solid grey;
     font-weight: 500;
     text-transform: uppercase;
-    text-align: ;
+    text-align: center;
     }
 .tableColumn {
 width: 200px;
